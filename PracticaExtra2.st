@@ -12,6 +12,16 @@ true & false. "=> Retorna false"
 4 + 2 negated between: 3 + 4 * 5 and: 'hello' size * 10. 
 "=> 4 + (-2)= |2| between: |35| and: (5 * 10)= |50|, retorna false"
 
+"Ejercicio 2 a)"
+
+|num|
+num:= IntegerPrompter prompt: 'Ingrese un valor'.
+b:= IntegerPrompter prompt: 'Ingrese un valor'.
+(num > 6) ifTrue: [num:= num - 1. b:= b + 1]
+	ifFalse: [num:= num + 1].
+num inspect.
+b inspect.
+
 "Ejercicio 2 b)"
 
 |sumador|
@@ -50,10 +60,3 @@ Transcript cr.
 'EDAD :' printOn: Transcript.
 Transcript space.
 56 printOn: Transcript.
-
-
-
-
-
-
-
