@@ -12,7 +12,7 @@ biblio:= Biblioteca crearBiblioNom: nombre.
 colecc1:= biblio todosLosLibros.
 colecc2:= OrderedCollection new.
 1 to:colecc1 size do:[:i|((colecc1 at:i) verEstado=false) ifTrue:[colecc2 add:(colecc1 at:i)] ].
-1 to:colecc2 size do:[:i| (colecc2 at:i) verTitulo].
-"x do: [:a | Transcript show: a printString; cr]."
-isbn:= Prompter prompt:'Ingrese un isbn'.
-biblio buscarLibroIsbn: isbn.
+1 to:colecc2 size do:[:i| (colecc2 at:i) verTitulo inspect].
+
+"isbn:= Prompter prompt:'Ingrese un isbn'.
+biblio buscarLibroIsbn: isbn."
